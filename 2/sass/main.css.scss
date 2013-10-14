@@ -1,7 +1,11 @@
 
 
+@import "compass/css3";
+@import "buttons.css";
+@import "../fonts/icomoon/style.css";
+
 body {
-	background-color: #DDD;
+	background-color: #FFF;
 	color: #444;
 	font-family: sans-serif;
 }
@@ -40,6 +44,10 @@ h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 5em;
 	font-weight: 300;
+}
+
+.panel, .panel > * {
+	@include border-radius(0);
 }
 
 .panel-heading h2 {
