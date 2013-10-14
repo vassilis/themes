@@ -1,0 +1,63 @@
+/* line 3, ../sass/main.scss */
+body {
+  background-color: #DDD;
+  color: #444;
+  font-family: sans-serif;
+}
+
+/* line 9, ../sass/main.scss */
+.container {
+  max-width: 960px;
+}
+
+/* line 13, ../sass/main.scss */
+header {
+  background-color: #444;
+  color: #FFF;
+}
+/* line 16, ../sass/main.scss */
+header .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 22, ../sass/main.scss */
+.logo {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* line 28, ../sass/main.scss */
+.panel-layout-default .panel-heading {
+  border: 0;
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 35, ../sass/main.scss */
+.height-400 {
+  min-height: 400px;
+}
+
+/* line 39, ../sass/main.scss */
+h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 5em;
+  font-weight: 300;
+}
+
+/* line 45, ../sass/main.scss */
+.panel-heading h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.1em;
+  line-height: 1;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* line 53, ../sass/main.scss */
+footer {
+  padding-bottom: 100px;
+}
