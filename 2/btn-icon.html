@@ -31,7 +31,7 @@
 			<div class="row">
 				<div class="col-md-3">
 					<label>Button Style</label><br>
-					<div class="btn-group" data-toggle="buttons">
+					<div class="btn-group btn-group-justified" data-toggle="buttons">
 						<label class="btn btn-default" ng-click="icon.circle = false; icon.flat = false;">
 							<input type="radio"> Default
 						</label>
@@ -41,7 +41,7 @@
 						<label class="btn btn-default" ng-click="icon.flat = true; icon.circle = false;">
 							<input type="radio" ng-model="icon.flat"> Flat
 						</label>
-					</div><br><br>
+					</div><br>
 					<label>Icon Size</label>
 					<select ng-model="icon.size" ng-options="s.name for s in sizes" class="form-control"></select><br>
 					<label>Button Color</label>
@@ -50,20 +50,31 @@
 
 				<div class="col-md-9 text-center icon-preview">
 					<div class="icon-preview-inner">
-						<a href="#" class="btn btn-default btn-cool-hover {{icon.size.value}} {{icon.color.value}}" ng-class="{'btn-icon-circle': icon.circle, 'btn-flat': icon.flat}"><i class="icon-droplet first-child"></i><i class="icon-leaf last-child"></i></a>
+						<a href="#" class="btn btn-cool-hover {{icon.size.value}} {{icon.color.value}}" ng-class="{'btn-icon-circle': icon.circle, 'btn-flat': icon.flat}"><i class="icon-eye first-child"></i><i class="icon-IcoMoon last-child"></i></a>
 						&nbsp;
-						<a href="#" class="btn btn-default {{icon.size.value}} {{icon.color.value}} active" ng-class="{'btn-icon-circle': icon.circle, 'btn-flat': icon.flat}"><i class="icon-fire"></i></a>
+						<a href="#" class="btn {{icon.size.value}} {{icon.color.value}} active" ng-class="{'btn-icon-circle': icon.circle, 'btn-flat': icon.flat}"><i class="icon-fire"></i></a>
 					</div>
 				</div>
 
 			</div>
-		</div>
 
-		<div class="main">
-			<div class="container">
-				<button class="btn btn-xl btn-block btn-inverse btn-cool-hover"><span class="icon-file-zip"></span><span class="icon-cloud-download"></span></button>
+			<div class="row">
+				<div class="col-md-9 col-md-offset-3 text-center">
+					<br><br><br><br>
+					<button class="btn btn-icon-64 btn-cool-hover {{icon.color.value}}" ng-class="{'btn-icon-circle': icon.circle, 'btn-flat': icon.flat}"><span class="icon-file-zip"></span><span class="icon-cloud-download"></span></button>
+				</div>
 			</div>
+			<div class="bubble"><i class="icon-bubble"></i></div>
+			<div class="bubble-text">
+				Are you Bootstrap addicted?<br>Then you will enjoy btn-icon and btn-extend!<br><br>
+				With btn-icon you will be able to make beautiful icon buttons like the ones you see on this page!<br><br>
+				With btn-extend you get some cool extra to the already awesome bootstrap buttons gallery.<br><br>
+				Both are available in CSS and SASS.
+				<span>Enjoy!</span>
+			</div>
+
 		<div>
+
 		<!-- <textarea class="form-control" rows="40"></textarea> -->
 
 		<footer>

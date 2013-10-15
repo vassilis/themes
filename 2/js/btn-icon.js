@@ -27,7 +27,7 @@ btnIcon.controller('MainCtrl', function($scope) {
 	]
 
 	$scope.icon = {
-		size: $scope.sizes[8],
+		size: $scope.sizes[7],
 		color: $scope.colors[0],
 		circle: true,
 		flat: false

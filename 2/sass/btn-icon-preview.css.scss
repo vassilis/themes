@@ -1,8 +1,10 @@
 
+@import "compass/css3/transform";
 
 .icon-preview {
 	position: relative;
 	height: 256px;
+	background: #FFF;
 }
 
 .icon-preview-inner {
@@ -10,6 +12,7 @@
 	height: 1px;
 	width: 100%;
 	top: 50%;
+	left: 0;
 	overflow: visible;
 	text-align: center;
 }
@@ -60,4 +63,32 @@
 
 .btn-icon-128 {
 	top: -128px;
+}
+
+.bubble {
+	font-size: 512px;
+	@include rotate(180deg);
+	position: relative;
+	top: -220px;
+	left: -400px;
+}
+
+.bubble-text {
+	font-size: 1.2em;
+	line-height: 1.2;
+	color: white;
+	position: relative;
+	top: -635px;
+	left: 75px;
+	width: 400px;
+	text-align: center;
+	span {
+		display: block;
+		font-size: 2.2em;
+		margin-top: 20px;
+	}
+}
+
+.icon-IcoMoon {
+	// @include rotate(-90deg);
 }
