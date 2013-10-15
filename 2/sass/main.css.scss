@@ -1,11 +1,12 @@
 
 
 @import "compass/css3";
-@import "buttons.css";
+@import "btn-extend.css";
+@import "btn-icon.css";
 @import "../fonts/icomoon/style.css";
 
 body {
-	background-color: #FFF;
+	background-color: #F5F5F5;
 	color: #444;
 	font-family: sans-serif;
 }
@@ -27,6 +28,13 @@ header {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 2em;
 	font-weight: 700;
+}
+
+.page-header {
+	background-color: #222;
+	color: #FFF;
+	margin-top: 0;
+	border-width: 0;
 }
 
 .panel-layout-default .panel-heading{
@@ -56,6 +64,10 @@ h1 {
 	line-height: 1;
 	margin: 0;
 	font-weight: 300;
+}
+
+.main {
+	padding: 50px 0;
 }
 
 footer {
