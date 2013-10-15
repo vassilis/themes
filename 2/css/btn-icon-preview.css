@@ -77,12 +77,27 @@
 .bubble-text {
   font-size: 1.2em;
   line-height: 1.2;
-  color: white;
-  position: relative;
-  top: -635px;
-  left: 75px;
-  width: 400px;
-  text-align: center;
+  color: #FFF;
+}
+@media (min-width: 992px) {
+  .bubble-text {
+    position: relative;
+    top: -635px;
+    left: 75px;
+    width: 400px;
+    text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .bubble-text {
+    background: #222;
+    padding: 60px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+  }
 }
 .bubble-text span {
   display: block;

@@ -1,5 +1,5 @@
 
-@import "compass/css3/transform";
+@import "compass/css3";
 
 .icon-preview {
 	position: relative;
@@ -76,19 +76,22 @@
 .bubble-text {
 	font-size: 1.2em;
 	line-height: 1.2;
-	color: white;
-	position: relative;
-	top: -635px;
-	left: 75px;
-	width: 400px;
-	text-align: center;
+	color: #FFF;
+	@media(min-width:992px){
+		position: relative;
+		top: -635px;
+		left: 75px;
+		width: 400px;
+		text-align: center;
+	}
+	@media(max-width:991px){
+		background: #222;
+		padding: 60px;
+		@include border-radius(4px);
+	}
 	span {
 		display: block;
 		font-size: 2.2em;
 		margin-top: 20px;
 	}
-}
-
-.icon-IcoMoon {
-	// @include rotate(-90deg);
 }
