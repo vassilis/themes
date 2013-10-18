@@ -1,0 +1,57 @@
+
+
+body {
+	color: #5B6475;
+	background: #EBECF2;
+	font: 2em/1 sans-serif;
+}
+
+body > .container {
+	max-width: 100%;
+	padding: 0;
+}
+
+header {
+	padding-top: 30px;
+	text-align: center;
+}
+
+#logo {
+	font: 2.5em/1 'Damion', sans-serif;
+}
+
+#nav-main {
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#nav-main a {
+	display: inline-block;
+	margin: 0 30px;
+	color: #5B6475;
+	font-size: 64px;
+	padding: 10px 15px 5px;
+	&:hover {
+		background: white;
+		text-decoration: none;
+	}
+}
+
+#main {
+	max-width: 800px;
+}
+
+.note {
+	background: rgba(white, .5);
+	padding: 40px 80px;
+	margin-top: 30px;
+	line-height: 1.5;
+	&:hover {
+		background: white;
+	}
+}
+
+footer {
+	padding: 300px;
+}
