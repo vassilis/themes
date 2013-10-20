@@ -1,11 +1,16 @@
+@import url(forms.css);
+@import url(icons.css);
+@import url(scrollbar.css);
+@import url(../fonts/icomoon/style.css);
 body {
-  color: #5B6475;
-  background: #EBECF2;
-  font: 2em/1 sans-serif;
+  color: #FFF;
+  background: #272B34;
+  font: 2em/1 serif;
+  padding-top: 93px;
 }
 
 a {
-  color: #5B6475;
+  color: #272B34;
 }
 a:hover {
   text-decoration: none;
@@ -21,36 +26,45 @@ body > .container {
 }
 
 header {
-  padding-top: 50px;
-  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header .container {
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #060A17;
+  max-width: 930px;
 }
 
 #logo {
-  font: 2.5em/1 'Damion', sans-serif;
+  color: #6D747F;
+  font: 2em/0.7 'Damion', sans-serif;
 }
 
 #nav-main {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 20px;
 }
 
 #nav-main a {
+  color: #6D747F;
   display: inline-block;
-  margin: 0 30px;
-  font-size: 64px;
+  margin: 0 10px;
   border-radius: 50%;
-  width: 110px;
   box-sizing: border-box;
+  position: relative;
 }
-#nav-main a i {
-  line-height: 110px;
+#nav-main a:hover {
+  color: #00CC9A;
 }
 
 #nav-sub a {
   width: 100px;
   display: inline-block;
   line-height: 2;
+  color: #FFF;
 }
 #nav-sub a i {
   font-size: 32px;
@@ -58,8 +72,12 @@ header {
 }
 
 #main {
-  max-width: 800px;
+  padding-bottom: 50px;
   position: relative;
+}
+#main .container {
+  position: relative;
+  max-width: 960px;
 }
 
 #page-search #main {
@@ -82,15 +100,43 @@ header {
 }
 
 .note {
-  background: rgba(255, 255, 255, 0.5);
-  padding: 40px 80px;
-  margin-top: 30px;
+  padding: 50px 100px;
   line-height: 1.5;
-}
-.note:hover {
-  background: white;
+  background-color: #3d4351;
+  margin-top: 1px;
 }
 
 footer {
   padding: 300px;
+}
+
+#main .big-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#main .big-curve path {
+  fill: #FFF;
+}
+
+#top {
+  background-color: #5B6475;
+  height: 70px;
+  position: relative;
+}
+#top .big-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#top .big-curve path {
+  fill: #FFF;
+}
+
+.big-triangle {
+  display: block;
+  margin: 0 auto;
+}
+.big-triangle path {
+  fill: #060A17;
 }

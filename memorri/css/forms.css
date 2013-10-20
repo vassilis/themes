@@ -1,0 +1,9 @@
+textarea.form-control,
+input[type="text"].form-control {
+  border: 0;
+  resize: none;
+}
+
+.btn {
+  border: 0;
+}
