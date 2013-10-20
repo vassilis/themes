@@ -4,16 +4,17 @@
 @import url(../fonts/icomoon/style.css);
 body {
   color: #FFF;
-  background: #272B34;
+  background-color: #1C2329;
   font: 2em/1 serif;
   padding-top: 93px;
 }
 
 a {
-  color: #272B34;
+  color: #00CC9A;
 }
 a:hover {
   text-decoration: none;
+  color: #00f0b5;
 }
 
 hr {
@@ -41,7 +42,7 @@ header .container {
 
 #logo {
   color: #6D747F;
-  font: 2em/0.7 'Damion', sans-serif;
+  font: 2.5em/0.5 'Damion', sans-serif;
 }
 
 #nav-main {
@@ -60,19 +61,7 @@ header .container {
   color: #00CC9A;
 }
 
-#nav-sub a {
-  width: 100px;
-  display: inline-block;
-  line-height: 2;
-  color: #FFF;
-}
-#nav-sub a i {
-  font-size: 32px;
-  display: block;
-}
-
 #main {
-  padding-bottom: 50px;
   position: relative;
 }
 #main .container {
@@ -80,34 +69,54 @@ header .container {
   max-width: 960px;
 }
 
-#page-search #main {
-  padding-top: 50px;
-}
-
-#nav-section {
-  position: absolute;
-  height: 100%;
-  top: 30px;
-  right: -50px;
-  border-left: 1px solid #5B6475;
-  padding: 10px;
-  font-size: 32px;
-}
-#nav-section a {
-  color: #5B6475;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.note {
+.note, .date, .more {
   padding: 50px 100px;
   line-height: 1.5;
-  background-color: #3d4351;
+  color: #FFF;
+  background-color: #343945;
   margin-top: 1px;
 }
 
-footer {
-  padding: 300px;
+.note-hidden {
+  display: none;
+}
+
+.date {
+  padding: 0;
+  background-color: #2b2f39;
+  height: 80px;
+  line-height: 80px;
+  position: relative;
+  text-align: center;
+  font-size: 1.1em;
+}
+.date .triangle-left, .date .triangle-right {
+  position: absolute;
+  top: 25px;
+  left: 0;
+}
+.date .triangle-left path, .date .triangle-right path {
+  fill: #1C2329;
+}
+.date .triangle-right {
+  left: auto;
+  right: 0;
+}
+
+.more {
+  text-align: center;
+  padding: 0;
+  line-height: 1;
+}
+.more a {
+  padding: 30px 0 20px;
+  font-size: 64px;
+  background-color: #00CC9A;
+  color: #004d3a;
+  display: block;
+}
+.more a:hover {
+  background-color: #00f0b5;
 }
 
 #main .big-curve {
@@ -139,4 +148,45 @@ footer {
 }
 .big-triangle path {
   fill: #060A17;
+}
+
+.tags-inline li {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 7px;
+  background-color: #00CC9A;
+}
+.tags-inline li:hover {
+  background-color: #00f0b5;
+}
+.tags-inline li a {
+  padding: 7px 15px;
+  color: #060A17;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+
+.actions-note li {
+  margin-left: 0;
+  margin-right: 0px;
+  padding: 0;
+}
+.actions-note li a {
+  line-height: 1;
+  font-size: 32px;
+  padding: 15px 16px 13px;
+  color: #6D747F;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+.actions-note li a:hover {
+  color: #00CC9A;
 }

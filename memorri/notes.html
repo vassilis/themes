@@ -5,6 +5,7 @@
 	<title>Memorri</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=latin,greek,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -19,12 +20,48 @@
 				</nav>
 			</div>
 		</header>
-		<!-- <svg class="big-triangle" xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="100" viewBox="0 0 100 100" preserveAspectRatio="none"> -->
-			<!-- <path d="m 0 0 l 50 50 l 100 -100 z"></path> -->
-			<!-- <path d="m 0 0 c 50 0 50 50 50 50 c 0 -50 50 -50 50 -50 z"></path> -->
-		<!-- </svg> -->
 		<div id="main">
 			<div class="container">
+				<div class="date">
+					Thursday, 17 October
+					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 0 0 l 100 50 l -100 50 z"></path>
+					</svg>
+					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 100 0 l -100 50 l 100 50 z"></path>
+					</svg>
+				</div>
+				<div class="note">
+					<p>cap s3_backup<br>aws s3 sync s3://vet-mongo-backup ~/Dropbox/vet-backup/<br>aws s3 sync ~/Dropbox/vet-backup/ s3://vet-mongo-backup<br>
+					<a href="https://443573374005.signin.aws.amazon.com/console">https://443573374005.signin.aws.amazon.com/console</a><br>Vasilis<br>^leIN0DhF3uE</p>
+					<div class="note-hidden">
+						<hr>
+						<ul class="tags-inline list-inline">
+							<li class="tag"><a href="/tags/vector">vector</a></li>
+							<li class="tag"><a href="/tags/drawing">drawing</a></li>
+						</ul>
+						<hr>
+						<ul class="actions-note list-inline">
+							<li class="action-trash"><a href="#"><i class="icon-trash"></i></a></li>
+							<li class="action-star"><a href="#"><i class="icon-star"></i></a></li>
+							<li class="action-share"><a href="#"><i class="icon-paperplane"></i></a></li>
+							<li class="action-publish"><a href="#"><i class="icon-world"></i></a></li>
+							<li class="action-edit pull-right"><a href="#"><i class="icon-pen"></i></a></li>
+							<li class="action-tag pull-right"><a href="#"><i class="icon-tag"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
+				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
+				<div class="date">
+					Wednsday, 16 October
+					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 0 0 l 100 50 l -100 50 z"></path>
+					</svg>
+					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 100 0 l -100 50 l 100 50 z"></path>
+					</svg>
+				</div>			
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
@@ -42,19 +79,14 @@
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
-				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
-				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
-				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
+				<div class="more"><a href="#"><i class="icon-truck"></i></a></div>
 			</div>
 		</div>
 	</div>
-	<footer>
-		&nbsp;
-	</footer>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 	<script>
-	// $(function(){
+	$(function(){
 	// 	(set_main_height = function(){
 	// 		$window = $(window);
 	// 		$header = $('header');
@@ -69,7 +101,12 @@
 	// 	$window.resize(function(){
 	// 		set_main_height();
 	// 	});
-	// })
-	// </script>
+
+		$('.note').on('click', function(){
+			$el = $(this);
+			$el.find('.note-hidden').first().toggle();
+		})
+	})
+	</script>
 </body>
 </html>
