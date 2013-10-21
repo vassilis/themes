@@ -18,7 +18,7 @@ a:hover {
 }
 
 hr {
-  border-color: #5B6475;
+  border-color: #6D747F;
 }
 
 body > .container {
@@ -75,6 +75,36 @@ header .container {
   color: #FFF;
   background-color: #343945;
   margin-top: 1px;
+  position: relative;
+}
+.note .indicators, .date .indicators, .more .indicators {
+  font-size: 16px;
+  position: absolute;
+  top: 17px;
+  right: 30px;
+}
+.note .indicators span, .date .indicators span, .more .indicators span {
+  margin-right: 10px;
+}
+.note .meta, .date .meta, .more .meta {
+  color: #6D747F;
+  border-top: 1px dashed #6D747F;
+  font-size: .8em;
+  margin: 50px 0 0;
+  text-align: right;
+}
+.note .meta span, .date .meta span, .more .meta span {
+  background-color: #343945;
+  position: relative;
+  top: -14px;
+  left: -50px;
+  padding: 0 10px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
 
 .note-hidden {
@@ -83,12 +113,14 @@ header .container {
 
 .date {
   padding: 0;
+  color: #6D747F;
   background-color: #2b2f39;
   height: 80px;
   line-height: 80px;
   position: relative;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 2em;
+  font-weight: 300;
 }
 .date .triangle-left, .date .triangle-right {
   position: absolute;
@@ -150,29 +182,63 @@ header .container {
   fill: #060A17;
 }
 
-.tags-inline li {
+.tags-inline {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-left: 16px;
+  border-top: 1px dashed #6D747F;
+}
+.tags-inline .tag {
+  line-height: 1;
+  margin: 0;
   padding: 0;
-  margin-left: 0;
-  margin-right: 7px;
-  background-color: #00CC9A;
+  overflow: hidden;
 }
-.tags-inline li:hover {
-  background-color: #00f0b5;
+.tags-inline .tag a:hover * {
+  color: #00f0b5;
+  border-color: #00f0b5;
 }
-.tags-inline li a {
-  padding: 7px 15px;
-  color: #060A17;
+.tags-inline .tag a span {
+  height: 24px;
+  line-height: 20px;
+  border: solid #6D747F;
+  border-width: 2px 0 2px 2px;
+  background-color: #343945;
+  font-size: .8em;
+  font-weight: 700;
+  padding: 0 0 0 10px;
+  color: #6D747F;
+  position: relative;
+  z-index: 2;
+  float: left;
+  text-transform: uppercase;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.tags-inline .tag a i {
+  color: #6D747F;
+  position: relative;
+  top: -4px;
+  left: -10px;
+  z-index: 1;
+  font-size: 32px;
+}
+.tags-inline .action-tag a i {
+  left: 0;
 }
 
 .actions-note li {
   margin-left: 0;
-  margin-right: 0px;
+  margin-right: 0;
   padding: 0;
 }
 .actions-note li a {

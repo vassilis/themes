@@ -21,7 +21,7 @@ a {
 }
 
 hr {
-	border-color: #5B6475;
+	border-color: #6D747F;
 }
 
 body > .container {
@@ -109,7 +109,32 @@ header {
 	color: #FFF;
 	background-color: #343945;
 	margin-top: 1px;
+	position: relative;
 	&.selected {
+	}
+	.indicators {
+		font-size: 16px;
+		position: absolute;
+		top: 17px;
+		right: 30px;
+		span {
+			margin-right: 10px;
+		}
+	}
+	.meta {
+		color: #6D747F;
+		border-top: 1px dashed #6D747F;
+		font-size: .8em;
+		margin: 50px 0 0;
+		text-align: right;
+		span {
+			background-color: #343945;
+			position: relative;
+			top: -14px;
+			left: -50px;
+			padding: 0 10px; 
+			@include inline-block;
+		}
 	}
 }
 
@@ -120,12 +145,14 @@ header {
 .date {
 	@extend .note;
 	padding: 0;
+	color: #6D747F;
 	background-color: darken(#343945, 4%);
 	height: 80px;
 	line-height: 80px;
 	position: relative;
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 2em;
+	font-weight: 300;
 	.triangle-left {
 		position: absolute;
 		top: 0;
@@ -195,26 +222,58 @@ header {
 }
 
 .tags-inline {
-	li {
+	margin-top: 20px;
+	padding-top: 30px;
+	padding-left: 16px;
+	border-top: 1px dashed #6D747F;
+	.tag {
+		line-height: 1;
+		margin: 0;
 		padding: 0;
-		margin-left: 0;
-		margin-right: 7px;
-		background-color: #00CC9A;
-		&:hover {
-			background-color: lighten(#00CC9A, 7%);
-		}
+		overflow: hidden;
 		a {
-			padding: 7px 15px;
-			color: #060A17;
-			@include inline-block;
+			&:hover {
+				* {
+					color: lighten(#00CC9A, 7%);
+					border-color: lighten(#00CC9A, 7%);
+				}
+			}
+			span {
+				height: 24px;
+				line-height: 20px;
+				border: solid #6D747F;
+				border-width: 2px 0 2px 2px;
+				background-color: #343945;
+				font-size: .8em;
+				font-weight: 700;
+				padding: 0 0 0 10px;
+				color: #6D747F;
+				position: relative;
+				z-index: 2;
+				float: left;
+				text-transform: uppercase;
+				@include inline-block;
+				@include border-radius(4px 0 0 4px);
+			}
+			i {
+				color: #6D747F;
+				position: relative;
+				top: -4px;
+				left: -10px;
+				z-index: 1;
+				font-size: 32px;
+			}
 		}
+	}
+	.action-tag a i{
+		left: 0;
 	}
 }
 
 .actions-note {
 	li {
 		margin-left: 0;
-		margin-right: 0px;
+		margin-right: 0;
 		padding: 0;
 		&:hover {
 			// background-color: lighten(#00CC9A, 7%);

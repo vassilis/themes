@@ -5,7 +5,7 @@
 	<title>Memorri</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,greek,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=latin,greek,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
 				<div id="logo" class="pull-left">memorri</div>
 				<nav id="nav-main" class="pull-right">
 					<a href="note.html"><i class="icon-32 icon-pen"></i></a>
-					<a href="contacts.html"><i class="icon-32 icon-paperplane"></i></a>
+					<!-- <a href="contacts.html"><i class="icon-32 icon-paperplane"></i></a> -->
 					<a href="index.html"><i class="icon-32 icon-search"></i></a>
 				</nav>
 			</div>
@@ -34,20 +34,25 @@
 				<div class="note">
 					<p>cap s3_backup<br>aws s3 sync s3://vet-mongo-backup ~/Dropbox/vet-backup/<br>aws s3 sync ~/Dropbox/vet-backup/ s3://vet-mongo-backup<br>
 					<a href="https://443573374005.signin.aws.amazon.com/console">https://443573374005.signin.aws.amazon.com/console</a><br>Vasilis<br>^leIN0DhF3uE</p>
+					<div class="indicators">
+						<span><i class="icon-star"></i></span>
+						<span><i class="icon-paperplane"></i></span>
+						<span><i class="icon-world"></i></span>
+					</div>
 					<div class="note-hidden">
-						<hr>
-						<ul class="tags-inline list-inline">
-							<li class="tag"><a href="/tags/vector">vector</a></li>
-							<li class="tag"><a href="/tags/drawing">drawing</a></li>
-						</ul>
-						<hr>
+						<div class="meta"><span>Mon, 21 Oct - 02:19</span></div>
 						<ul class="actions-note list-inline">
 							<li class="action-trash"><a href="#"><i class="icon-trash"></i></a></li>
 							<li class="action-star"><a href="#"><i class="icon-star"></i></a></li>
 							<li class="action-share"><a href="#"><i class="icon-paperplane"></i></a></li>
 							<li class="action-publish"><a href="#"><i class="icon-world"></i></a></li>
 							<li class="action-edit pull-right"><a href="#"><i class="icon-pen"></i></a></li>
-							<li class="action-tag pull-right"><a href="#"><i class="icon-tag"></i></a></li>
+						</ul>
+						<ul class="tags-inline list-inline">
+							<!-- <li><a href="#"><i class="icon-tag"></i></a></li> -->
+							<li class="tag"><a href="/tags/vector"><span>vector</span><i class="icon-tag"></i></a></li>
+							<li class="tag"><a href="/tags/drawing"><span>drawing</span><i class="icon-tag"></i></a></li>
+							<li class="tag action-tag"><a href="#"><i class="icon-tag"></i></a></li>
 						</ul>
 					</div>
 				</div>
