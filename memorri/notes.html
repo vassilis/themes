@@ -5,7 +5,7 @@
 	<title>Memorri</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet'>
-	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700&amp;subset=latin,greek,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,greek,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -24,11 +24,11 @@
 			<div class="container">
 				<div class="date">
 					Thursday, 17 October
-					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<path d="m 0 0 l 100 50 l -100 50 z"></path>
+					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="30" height="80" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 0 25 l 70 25 l -70 25 z"></path>
 					</svg>
-					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<path d="m 100 0 l -100 50 l 100 50 z"></path>
+					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="30" height="80" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 100 25 l -70 25 l 70 25 z"></path>
 					</svg>
 				</div>
 				<div class="note">
@@ -54,12 +54,12 @@
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
 				<div class="date">
-					Wednsday, 16 October
-					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<path d="m 0 0 l 100 50 l -100 50 z"></path>
+					Wednesday, 16 October
+					<svg class="triangle-left" xmlns="http://www.w3.org/2000/svg" version="1.1" width="30" height="80" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 0 25 l 70 25 l -70 25 z"></path>
 					</svg>
-					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="15" height="30" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<path d="m 100 0 l -100 50 l 100 50 z"></path>
+					<svg class="triangle-right" xmlns="http://www.w3.org/2000/svg" version="1.1" width="30" height="80" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="m 100 25 l -70 25 l 70 25 z"></path>
 					</svg>
 				</div>			
 				<div class="note">Use the element inspector of your favorite browser and discover the icons on this page for more examples!</div>
@@ -104,7 +104,7 @@
 
 		$('.note').on('click', function(){
 			$el = $(this);
-			$el.find('.note-hidden').first().toggle();
+			$el.toggleClass('selected').find('.note-hidden').first().toggle();
 		})
 	})
 	</script>
