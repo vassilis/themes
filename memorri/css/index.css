@@ -93,19 +93,13 @@ header .container {
   zoom: 1;
   *display: inline;
 }
-.note:hover .note-lever, .date:hover .note-lever, .more:hover .note-lever {
-  display: block;
-}
-.note:hover .triangle-down, .date:hover .triangle-down, .more:hover .triangle-down {
-  display: inline;
-}
-.note:hover .triangle-up, .date:hover .triangle-up, .more:hover .triangle-up {
+.note .triangle-up, .date .triangle-up, .more .triangle-up {
   display: none;
 }
-.note:hover.selected .triangle-down, .date:hover.selected .triangle-down, .more:hover.selected .triangle-down {
+.note.selected .triangle-down, .selected.date .triangle-down, .selected.more .triangle-down {
   display: none;
 }
-.note:hover.selected .triangle-up, .date:hover.selected .triangle-up, .more:hover.selected .triangle-up {
+.note.selected .triangle-up, .selected.date .triangle-up, .selected.more .triangle-up {
   display: inline;
 }
 
@@ -120,19 +114,24 @@ header .container {
 }
 
 .note-lever {
-  display: none;
+  opacity: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   padding: 10px 0;
   background-color: #383e4b;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-.note-lever .triangle-down {
-  display: none;
-}
-.note-lever .triangle-up {
-  display: none;
+.note-lever:hover {
+  opacity: 1;
 }
 
 .triangle-down path,
