@@ -70,34 +70,21 @@ header .container {
 }
 
 .note, .date, .more {
-  padding: 50px 100px;
-  line-height: 1.5;
-  color: #FFF;
   background-color: #343945;
   margin-top: 1px;
   position: relative;
-}
-.note .indicators, .date .indicators, .more .indicators {
-  font-size: 16px;
-  position: absolute;
-  top: 17px;
-  right: 30px;
-}
-.note .indicators span, .date .indicators span, .more .indicators span {
-  margin-right: 10px;
 }
 .note .meta, .date .meta, .more .meta {
   color: #6D747F;
   border-top: 1px dashed #6D747F;
   font-size: .8em;
-  margin: 50px 0 0;
   text-align: right;
 }
 .note .meta span, .date .meta span, .more .meta span {
   background-color: #343945;
   position: relative;
-  top: -14px;
-  left: -50px;
+  top: -9px;
+  left: -160px;
   padding: 0 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -106,9 +93,51 @@ header .container {
   zoom: 1;
   *display: inline;
 }
+.note:hover .note-lever, .date:hover .note-lever, .more:hover .note-lever {
+  display: block;
+}
+.note:hover .triangle-down, .date:hover .triangle-down, .more:hover .triangle-down {
+  display: inline;
+}
+.note:hover .triangle-up, .date:hover .triangle-up, .more:hover .triangle-up {
+  display: none;
+}
+.note:hover.selected .triangle-down, .date:hover.selected .triangle-down, .more:hover.selected .triangle-down {
+  display: none;
+}
+.note:hover.selected .triangle-up, .date:hover.selected .triangle-up, .more:hover.selected .triangle-up {
+  display: inline;
+}
+
+.note-text {
+  padding: 50px 100px;
+  line-height: 1.5;
+  color: #FFF;
+}
 
 .note-hidden {
   display: none;
+}
+
+.note-lever {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #383e4b;
+}
+.note-lever .triangle-down {
+  display: none;
+}
+.note-lever .triangle-up {
+  display: none;
+}
+
+.triangle-down path,
+.triangle-up path {
+  fill: #1C2329;
 }
 
 .date {
@@ -183,9 +212,8 @@ header .container {
 }
 
 .tags-inline {
-  margin-top: 20px;
-  padding-top: 30px;
-  padding-left: 16px;
+  margin: 0;
+  padding: 30px 100px 55px;
   border-top: 1px dashed #6D747F;
 }
 .tags-inline .tag {
@@ -236,6 +264,9 @@ header .container {
   left: 0;
 }
 
+.actions-note {
+  padding: 0 100px 5px;
+}
 .actions-note li {
   margin-left: 0;
   margin-right: 0;

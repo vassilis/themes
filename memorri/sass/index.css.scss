@@ -104,42 +104,82 @@ header {
 // }
 
 .note {
-	padding: 50px 100px;
-	line-height: 1.5;
-	color: #FFF;
 	background-color: #343945;
 	margin-top: 1px;
 	position: relative;
-	&.selected {
-	}
-	.indicators {
-		font-size: 16px;
-		position: absolute;
-		top: 17px;
-		right: 30px;
-		span {
-			margin-right: 10px;
-		}
-	}
+	// .indicators {
+	// 	font-size: 16px;
+	// 	position: absolute;
+	// 	top: 17px;
+	// 	right: 30px;
+	// 	span {
+	// 		margin-right: 10px;
+	// 	}
+	// }
 	.meta {
 		color: #6D747F;
 		border-top: 1px dashed #6D747F;
 		font-size: .8em;
-		margin: 50px 0 0;
 		text-align: right;
 		span {
 			background-color: #343945;
 			position: relative;
-			top: -14px;
-			left: -50px;
+			top: -9px;
+			left: -160px;
 			padding: 0 10px; 
 			@include inline-block;
 		}
 	}
+	&:hover {
+		.note-lever {
+			display: block;
+		}
+		.triangle-down {
+			display: inline;
+		}
+		.triangle-up {
+			display: none;
+		}
+		&.selected {
+			.triangle-down {
+				display: none;
+			}
+			.triangle-up {
+				display: inline;
+			}
+		}
+	}
+}
+
+.note-text {
+	padding: 50px 100px;
+	line-height: 1.5;
+	color: #FFF;
 }
 
 .note-hidden {
 	display: none;
+}
+
+.note-lever {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: lighten(#343945, 2%);
+	.triangle-down {
+		display: none;
+	}
+	.triangle-up {
+		display: none;
+	}
+}
+
+.triangle-down path,
+.triangle-up path {
+	fill: #1C2329;
 }
 
 .date {
@@ -222,9 +262,8 @@ header {
 }
 
 .tags-inline {
-	margin-top: 20px;
-	padding-top: 30px;
-	padding-left: 16px;
+	margin: 0;
+	padding: 30px 100px 55px;
 	border-top: 1px dashed #6D747F;
 	.tag {
 		line-height: 1;
@@ -271,6 +310,7 @@ header {
 }
 
 .actions-note {
+	padding: 0 100px 5px;
 	li {
 		margin-left: 0;
 		margin-right: 0;
