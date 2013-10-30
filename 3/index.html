@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<style media="screen">
+			body {
+				margin: 0;
+				color: #000;
+				background-color: #FFF;
+				font: 2em/1.5 sans-serif;
+			}
+			.slide {
+				padding: 200px;
+			}
+			.slide p {
+				max-width: 50%;
+			}
+			.slide1 { background-color: #556270; }
+			.slide2 { background-color: #4ECDC4; }
+			.slide3 { background-color: #C7F464; }
+			.slide4 { background-color: #FF6B6B; }
+			.slide5 { background-color: #C44D58; }
+
+			.clicked {
+				color: #FFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slide slide1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac varius tellus. Sed aliquet diam leo, vitae consequat justo commodo ut. Sed posuere mattis facilisis. Aenean pretium odio a sem lobortis, sed congue tortor venenatis. Mauris bibendum a eros quis semper. Suspendisse auctor consectetur euismod. Maecenas ullamcorper purus eget pretium egestas. Sed mattis eu diam non eleifend. Nam sagittis, neque nec convallis ultricies, arcu sapien euismod purus, ac aliquet justo nulla nec nunc.</p></div>
+		<div class="slide slide2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac varius tellus. Sed aliquet diam leo, vitae consequat justo commodo ut. Sed posuere mattis facilisis. Aenean pretium odio a sem lobortis, sed congue tortor venenatis. Mauris bibendum a eros quis semper. Suspendisse auctor consectetur euismod. Maecenas ullamcorper purus eget pretium egestas. Sed mattis eu diam non eleifend. Nam sagittis, neque nec convallis ultricies, arcu sapien euismod purus, ac aliquet justo nulla nec nunc.</p></div>
+		<div class="slide slide3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac varius tellus. Sed aliquet diam leo, vitae consequat justo commodo ut. Sed posuere mattis facilisis. Aenean pretium odio a sem lobortis, sed congue tortor venenatis. Mauris bibendum a eros quis semper. Suspendisse auctor consectetur euismod. Maecenas ullamcorper purus eget pretium egestas. Sed mattis eu diam non eleifend. Nam sagittis, neque nec convallis ultricies, arcu sapien euismod purus, ac aliquet justo nulla nec nunc.</p></div>
+		<div class="slide slide4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac varius tellus. Sed aliquet diam leo, vitae consequat justo commodo ut. Sed posuere mattis facilisis. Aenean pretium odio a sem lobortis, sed congue tortor venenatis. Mauris bibendum a eros quis semper. Suspendisse auctor consectetur euismod. Maecenas ullamcorper purus eget pretium egestas. Sed mattis eu diam non eleifend. Nam sagittis, neque nec convallis ultricies, arcu sapien euismod purus, ac aliquet justo nulla nec nunc.</p></div>
+		<div class="slide slide5"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac varius tellus. Sed aliquet diam leo, vitae consequat justo commodo ut. Sed posuere mattis facilisis. Aenean pretium odio a sem lobortis, sed congue tortor venenatis. Mauris bibendum a eros quis semper. Suspendisse auctor consectetur euismod. Maecenas ullamcorper purus eget pretium egestas. Sed mattis eu diam non eleifend. Nam sagittis, neque nec convallis ultricies, arcu sapien euismod purus, ac aliquet justo nulla nec nunc.</p></div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(function(){
+				$('.slide').on('click', function(){
+					$(this).toggleClass('clicked');
+				})
+			})
+		</script>
+	</body>
+</html>
